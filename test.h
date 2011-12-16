@@ -1,8 +1,3 @@
-template <typename T>
-class Bar
-{
-};
-
 class Foo
 {	
 public:

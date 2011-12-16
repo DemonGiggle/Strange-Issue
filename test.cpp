@@ -2,8 +2,7 @@
 #include "test.h"
 
 template <>
-void Foo::sayHello(Bar<int>& msg)
+void Foo::sayHello(int& msg)
 {
-	std::cout << "Bar<int> version" << std::endl;
+	std::cout << "<int> version" << std::endl;
 }
-

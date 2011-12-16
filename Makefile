@@ -1,8 +1,10 @@
-a.out: main.cpp test.o
-	g++ -O3 main.cpp test.o
+all: a.opt.out a.out
 
-test.o: test.cpp test.h
-	g++ -O3 -c test.cpp 
+a.opt.out: main.cpp test.cpp
+	g++ -O3 main.cpp test.cpp -o a.opt.out
+
+a.out: main.cpp test.cpp
+	g++ main.cpp test.cpp -o a.out
 
 clean:
-	rm -f a.out test.o
+	rm -f a.out  a.opt.out

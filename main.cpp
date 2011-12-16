@@ -4,10 +4,10 @@
 int main()
 {
 	Foo foo;
-	Bar<int> bar;
-	Bar<double> bar2;
+	double value_double = 44;
+	int value_int = 33;
 
-	foo.sayHello(bar);
-	foo.sayHello(bar2);
+	foo.sayHello(value_int);
+	foo.sayHello(value_double);
 	return 0;
 }
